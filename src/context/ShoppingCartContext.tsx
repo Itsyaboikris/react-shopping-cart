@@ -66,7 +66,7 @@ export function ShoppingCartProvider({children}: ShoppingCartProviderProps) {
 		setCartItems(currentItems => {
 			return currentItems.filter(item => item.id !== id)
 		})
-	}F
+	}
 
 	return (
 		<ShoppingCartContext.Provider value={{getItemQuantity, increaseCartQuantity, decreaseCartQuantity, removeFromCart}}>
